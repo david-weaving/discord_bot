@@ -14,7 +14,7 @@ def run_discord_bot():
     client = commands.Bot(command_prefix='!', intents=discord.Intents.all())
     status_game = cycle(["with Jamison's feelings", "with the Commish's baton", "kissing simulator", "with the gamer gunk in my mouse pad"])
     status_wa = cycle(["Jared through his window", "FNAF playthroughs", "two guys partake in a mutual relationship"])
-    status_lis = cycle(["Britney Spears", "your non-stop whining, James getting rolled by four Ramattras at once"])
+    status_lis = cycle(["Britney Spears", "your non-stop whining", "James getting rolled by four Ramattras at once"])
 
     @client.event
     async def on_ready():
