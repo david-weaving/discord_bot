@@ -7,9 +7,9 @@ import time
 import random
 
 
-#MTA2MTcyOTU2NDg3MjY3MTQwMg.GhNQC0.RzikgMs9IXk19u-Hrs5wEwZz3DuCFWgE5WDgc4
 def run_discord_bot():
-    TOKEN = 'MTA2MTcyOTU2NDg3MjY3MTQwMg.GhNQC0.RzikgMs9IXk19u-Hrs5wEwZz3DuCFWgE5WDgc4'
+    # to note: the code here is not being actively used at the moment and the token will not be available here (for obvious reasons)
+    TOKEN = ''
     client = discord.Client(intents=discord.Intents.all()) # HEADS UP: you might not need this line the bottom might do.
     client = commands.Bot(command_prefix='!', intents=discord.Intents.all())
     status_game = cycle(["with Jamison's feelings", "with the Commish's baton"])
