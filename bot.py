@@ -12,7 +12,7 @@ def run_discord_bot():
     TOKEN = 'MTA2MTcyOTU2NDg3MjY3MTQwMg.GhNQC0.RzikgMs9IXk19u-Hrs5wEwZz3DuCFWgE5WDgc4'
     client = discord.Client(intents=discord.Intents.all()) # HEADS UP: you might not need this line the bottom might do.
     client = commands.Bot(command_prefix='!', intents=discord.Intents.all())
-    status_game = cycle(["with Jamison's feelings", "with the Commish's baton", "kissing simulator", "with the gamer gunk in my mouse pad"])
+    status_game = cycle(["with Jamison's feelings", "with the Commish's baton"])
     status_wa = cycle(["Jared through his window", "FNAF playthroughs", "two guys partake in a mutual relationship"])
     status_lis = cycle(["Britney Spears", "your non-stop whining", "James getting rolled by four Ramattras at once"])
 
@@ -117,7 +117,7 @@ def run_discord_bot():
         "`The First Thiccums`\nHere, we have the first thiccums to the Commish. A 'Thiccums' is like a commish's (in most cases, also powerless) side-kick. Every commish gets to choose a thiccums as they like, and no commish is complete without them! As for the first thiccums, it is unknown whether or not he is still alive. The Commish is unpredictable and has killed thiccums for no reason and without hesitation before immediately choosing another one."]
         picture_commish =['https://cdn.discordapp.com/attachments/639932575149850635/1061508013699121182/292845_stellarian_burning-citytr4.jpg', 'https://cdn.discordapp.com/attachments/1061765084382248980/1062166794627977259/IMG_1033.GIF', 'https://cdn.discordapp.com/attachments/1061765084382248980/1062167162552324096/yFDthr.jpg', 'https://cdn.discordapp.com/attachments/1061765084382248980/1062167463783047261/pughrse.jpg', 'https://cdn.discordapp.com/attachments/1061765084382248980/1062167390462418944/reid-smith.jpg', 'https://cdn.discordapp.com/attachments/1061765084382248980/1062167080322990120/matt-hell344.jpg', 'https://cdn.discordapp.com/attachments/1061765084382248980/1062167619794391061/IMG_0432.GIF']
         if x == 5:
-            await ctx.send('Look at you. Calling out for me with your little "!commish". Oh sweety, youre gonna get whats coming to ya. But for now Ill enjoy watching you squirm through the eyes of this bot.')
+            await ctx.send('Look at you. Calling out for me with your little "!commish"')
         else:
             y = random.randint(0, 6)
             await ctx.send(picture_commish[y])
