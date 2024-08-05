@@ -108,21 +108,6 @@ def run_discord_bot():
         e_ball = ['Yes', 'No', 'Maybe', 'Sure. Whatever. I guess.', 'Im not really listening but yeah yeah sure thing', 'LEAVE ME ALONE', 'How am I supposed to know?', 'I dont care, man', 'That was stupid', 'I cant tell, maybe ask some other time', 'Dont ask me right now', 'No way in hell', 'NOPE', 'Yeah, thats not going to work', 'You really just ask me that?', 'Oh yeah', '100%', 'YEEESSS']
         await ctx.send(f'You asked: {question}\nMy insight tells me: {random.choice(e_ball)}')
 
-    @client.command(aliases=['commish', 'randal'])
-    async def the_commish(ctx):
-        x = random.randint(1, 10)
-        array_commish = ['`Joker Commish`\nJoker Commish is a moderately powerful commish. He has the power to bring entire cities down with his relentless crime. Joker Commish will frequently force his thiccums to dress as batman and fight him in town square.', "`The Commish`\nThe Commish, the grandfather of all commishes and thiccums, the most powerful commish and head of the commish council. No one knows when he popped in to existence. It's said that he created all the other commishes out of boredom and could easily erase all of them out of existence with a single snap. No entity has ever been able to match his power. Legend has it that his baton is the key to defeating him.",
-        "`Alien Commish`\nAlien Commish is exactly like the Commish except he's green because he's an alien. Alien Commish is extremely powerful, being the second strongest commish and holding a seat as one of the big three on the commish's council. If the Commish were to snap all the other commishes out of existence, Alien Commish would be able to withstand one snap, BUT NOT TWO.", "`ZRRRRG Commish`\nIt is unknown where ZRRRRG Commish lies on the power-scale. He teleports to where ever he likes and uses an eye beam to blast people. People hit with this blast become deformed and essentially brain dead. Once the damage is done, ZRRRG Commish teleports away.",
-        "`Fat Commish`\nFat Commish in theory is an incredibly powerful commish, having almost the same powerlevel as the Commish. However, because he's fat, he's insecure about his weight and his insecurities hold him back, making him one of the weaker commishes.", "`Hell Commish`\nHell Commish oversees hell and is the fourth most powerful commish, right under Demon Commish. Hell Commish has a demformed face, with his right hand morphed in to a hammer and his left arm morphing down in to a spike. Hell Commish spends all his time wandering the scapes of hell, but he will occasionally roam outside of hell. If you're caught in his gaze, there's nothing that can be done, you're already marked for death.",
-        "`The First Thiccums`\nHere, we have the first thiccums to the Commish. A 'Thiccums' is like a commish's (in most cases, also powerless) side-kick. Every commish gets to choose a thiccums as they like, and no commish is complete without them! As for the first thiccums, it is unknown whether or not he is still alive. The Commish is unpredictable and has killed thiccums for no reason and without hesitation before immediately choosing another one."]
-        picture_commish =['https://cdn.discordapp.com/attachments/639932575149850635/1061508013699121182/292845_stellarian_burning-citytr4.jpg', 'https://cdn.discordapp.com/attachments/1061765084382248980/1062166794627977259/IMG_1033.GIF', 'https://cdn.discordapp.com/attachments/1061765084382248980/1062167162552324096/yFDthr.jpg', 'https://cdn.discordapp.com/attachments/1061765084382248980/1062167463783047261/pughrse.jpg', 'https://cdn.discordapp.com/attachments/1061765084382248980/1062167390462418944/reid-smith.jpg', 'https://cdn.discordapp.com/attachments/1061765084382248980/1062167080322990120/matt-hell344.jpg', 'https://cdn.discordapp.com/attachments/1061765084382248980/1062167619794391061/IMG_0432.GIF']
-        if x == 5:
-            await ctx.send('Look at you. Calling out for me with your little "!commish"')
-        else:
-            y = random.randint(0, 6)
-            await ctx.send(picture_commish[y])
-            await ctx.send(array_commish[y])
-
     @client.command(aliases=['game roll', 'gameroll', 'dicegame', 'dice game'])
     async def dice_game(ctx):
         user_roll = (random.randint(1, 6))
